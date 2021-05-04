@@ -14,7 +14,7 @@ conn=sqlite3.connect("address_book.db")
 c= conn.cursor()
 
 # create table
-c.execute("""CREATE TABLE addresses(
+'''c.execute("""CREATE TABLE addresses(
          first_name text,
          last_name text,
          address text,
@@ -24,6 +24,9 @@ c.execute("""CREATE TABLE addresses(
 )
 """)
 print("Table Create successfully")
+'''
+
+
 
 # commit change
 conn.commit()
